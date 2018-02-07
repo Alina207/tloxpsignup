@@ -2,13 +2,28 @@
   "name": "tloxpsignup",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "minifier": "^0.8.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12",
+    "reload": "^2.2.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass resources/sass/test.scss",
+    "build": "npm run sass && npm run js",
+    "build-css": "node-sass --include-path scss assets/scss/main.scss dist/css/main.css",
+    "minify-css": "minify --output dist/css/main.css dist/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css && npm run minify-css\"",
+    "js": "npm run sass"
   },
   "keywords": [],
-  "author": "",
+  "author": "TransUnion",
   "license": "ISC",
   "repository": {
     "type": "git",
