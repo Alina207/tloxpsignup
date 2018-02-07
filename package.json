@@ -4,7 +4,8 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -33,5 +34,5 @@
     "url": "https://github.com/Alina207/tloxpsignup/issues"
   },
   "homepage": "https://github.com/Alina207/tloxpsignup#readme",
-  "description": ""
+  "description": "Testing of new signup page"
 }
