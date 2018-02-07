@@ -1,7 +1,6 @@
 {
-  "name": "TLOxpsignup",
+  "name": "tloxpsignup",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
@@ -10,5 +9,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alina207/tloxpsignup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alina207/tloxpsignup/issues"
+  },
+  "homepage": "https://github.com/Alina207/tloxpsignup#readme",
+  "description": ""
 }
