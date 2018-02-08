@@ -1,38 +1,30 @@
 {
   "name": "tloxpsignup",
   "version": "1.0.0",
+  "description": "TLOxp signup page test",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "minifier": "^0.8.1",
-    "node-sass": "^4.7.2",
-    "nodemon": "^1.14.12",
-    "reload": "^2.2.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass resources/sass/test.scss",
-    "build": "npm run sass && npm run js",
-    "build-css": "node-sass --include-path scss assets/scss/main.scss dist/css/main.css",
-    "minify-css": "minify --output dist/css/main.css dist/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css && npm run minify-css\"",
-    "js": "npm run sass"
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
   },
-  "keywords": [],
-  "author": "TransUnion",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alina207/tloxpsignup.git"
   },
+  "author": "TransUnion",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alina207/tloxpsignup/issues"
   },
   "homepage": "https://github.com/Alina207/tloxpsignup#readme",
-  "description": "Testing of new signup page"
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "postcss-cli": "^5.0.0"
+  }
 }
