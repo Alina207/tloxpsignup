@@ -1,3 +1,33 @@
-.site-header {
-  background-color: red!important;
+@import "_custom"; // your overrides must come before you import bootstrap's files
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+
+// Globals
+.highlight {
+  background-color: $secondary;
+}
+
+
+// Right Side
+
+.right-container {
+
+  .card {
+    background-color: $gray-300
+  }
+
+  .card-header {
+    text-align: center;
+    border: 0;
+    background-color: $gray-300;
+  }
+
+
+}
+
+// Quote Section
+
+.quote-section {
+  margin-top: 2rem;
 }

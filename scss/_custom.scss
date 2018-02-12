@@ -1,0 +1,99 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: () ;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #00a6ca ; // adjusted
+$darkblue: #006685 ; // added
+$indigo:  #6610f2 ;
+$purple:  #6f42c1 ;
+$pink:    #e83e8c ;
+$red:     #eb0000 ; // adjusted
+$orange:  #f16e00 ; // adjusted
+$yellow:  #FCD800 ; // adjusted
+$green:   #008A00 ; // adjusted
+$teal:    #20c997 ;
+$cyan:    #17a2b8 ;
+$lightgreen: #a9d161 ; // added
+
+$colors: () ;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $blue;
+$secondary:     $yellow;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
+
+// disable all border-radii //
+$border-radius:               0!important; // needed to add !important for it to apply to cards
+$border-radius-lg:            0!important; // also order matters
+$border-radius-sm:            0!important;
+$enable-rounded:            false!important;
+@if not($enable-rounded) { // needed to add b/c https://github.com/telerik/kendo-theme-bootstrap/issues/245
+}
+
+$enable-shadows:            true;
+
+$btn-box-shadow:            3px 3px 1px rgba(0,0,0,0.08);
