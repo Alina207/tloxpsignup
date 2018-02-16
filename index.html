@@ -10,6 +10,7 @@
 		<title> TLOxp Signup | TransUnion</title>
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="public/css/main.css?v=1.1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 
@@ -21,11 +22,13 @@
 	      </a>
 	    </div>
 	  </nav>
-	  <div class="jumbotron bg-primary">
-      <div class="container jumbotron-text" style="border: 1px solid red;">
-      	<h2>Instantly access a 360&#176; profile of any person, business or location</h2>
-        <h1 class="display-3">Access the right data Right now</h1>
-      </div>
+	  <div class="jumbotron banner">
+      <div class="container">
+				<div class="jumbotron-text col-8">
+					<h2>Instantly access a 360&#176; profile of any person, business or location</h2>
+        	<h1 class="display-3">Access the right data Right now</h1>
+				</div>
+			</div>
     </div>
     <div class="main-content">
     	<div class="container">
@@ -33,7 +36,7 @@
     			<div class="col-sm-6 left-container" style="border: 1px solid blue;">
     				<div class="col-sm-12 left-col">
 	    				<video class="video" style="border: 1px solid orange; width: 100%;" data-video-id="4792095220001" data-account="4554542011001" data-player="default" data-embed="default" data-application-id="" class="video-js" controls=""></video>
-        				<div class="card card-block my-3">
+        				<div class="video-cta card card-block my-3">
                             <div class="card-body p-2">
                                 <div class="card-text">Watch the video to learn how you can get a 360-degree profile of any subject in seconds.</div>
                             </div>
@@ -53,9 +56,9 @@
             <!-- form user info -->
     			<div class="col-sm-6 right-container" style="border: 1px solid green;">
                     <div class="col-sm-12 right-col">
-                        <div class="card card-outline-secondary px-5" style="border: 1px solid red;">
-                            <div class="card-header px-4">
-                                <h3>Sign up now for your <span class="highlight"> free trial </span> of TLOxp.*</h3>
+                        <div class="signup-form card card-outline-secondary px-5" style="border: 1px solid red;">
+                            <div class="card-header pt-4">
+                                <h3>Sign up now for your <span class="highlight"> <br>free trial </span> of TLOxp.*</h3>
                                 <p> Please complete the form below </p>
                             </div>
                             <div class="card-block">
@@ -98,8 +101,8 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-12">
-                                            <select class="form-control" size="">
-                                                <option>Please select your industry*</option>
+                                            <select class="form-control" type="text" placeholder="Password">
+                                                <option selected>Please select your industry*</option>
                                                 <option>Industry</option>
                                                 <option>Industry</option>
                                                 <option>Industry</option>
@@ -115,7 +118,7 @@
                                     <div class="form-group row">
                                         <div class="col-lg-12">
                                             <select class="form-control" size="0">
-                                                <option>Number of employees*</option>
+                                                <option selected>Number of employees*</option>
                                                 <option>Number of employees</option>
                                                 <option>Number of employees</option>
                                                 <option>Number of employees</option>
@@ -135,7 +138,7 @@
                                     <div class="form-group row">
                                         <div class="col-lg-12">
                                             <p class="text-center">*Required fields</p>
-                                            <p>Once you complete the form, you waill be contacted by a representative to continue the registration process. For additional questions, please call 1-800-890-5599</p>
+                                            <p>Once you complete the form, you will be contacted by a representative to continue the registration process. For additional questions, please call 1-800-890-5599</p>
                                         </div>
                                     </div>
                                 </form>
@@ -144,30 +147,50 @@
                     </div>
                 </div> <!-- /form user info  -->
     	   </div> <!-- /row -->
-        </div> <!-- /container -->
-        <div class="row quote-section" style="border: 1px solid red;">
-            <div class="col-sm-6 offset-sm-3 p-4" style="border: 1px solid blue;">
-                <h4 class="text-center">What our customers are saying</h4>
-                <i class="fa fa-2x fa-quote-left"></i>
-                <div class="card card-default">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 py-3">
-                                <blockquote class="blockquote blockquote-style">
-                                    <p>Lorem ipsum dolor sit amet, consectetuSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title" class="">Source Title</cite>
-                                    </footer>
-                                </blockquote>
-                            </div>
-                            <div class="col-md-6 d-flex p-5" style="border: 1px solid orange;">
-                                <h1 class="mx-auto align-self-center"><i class="fa fa-2x fa-tree"></i></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa fa-2x fa-quote-right"></i>
-            </div>
-        </div> <!-- quote section /row -->
+
+
+
+    </div> <!-- /container -->
+
+		<div class="row testimonials mt-4" style="border: 1px solid red;">
+			<div class="col-12 " style="border: 1px solid purple;">
+				<div class="row py-4 justify-content-md-center">
+				<div class="quote-box col-lg-8 col-md-12" style="border: 1px solid blue;">
+					<div class="row">
+						<div class="col-12">
+						<h4>What our customers are saying</h4>
+						<div class="quote-icon">
+							<i class="fa fa-2x fa-quote-left" aria-hidden="true"></i>
+						</div>
+					</div>
+					</div>
+						<div class="row align-items-center">
+							<div class="col-sm-12 col-md-6" style="border: 1px solid yellow">
+								<blockquote class="blockquote blockquote-style">
+										<p class="quote-text">A good partner helps us remove blind spots and five advice to make things better. That's what I get from TransUnion.</p>
+										<p class="quote-source">Arnold Pravinata - Chief Decision Science Officer, Marlette Funding</p>
+								</blockquote>
+							</div>
+
+
+						<div class="col-sm-12 col-md-6" style="border: 1px solid yellow">
+							<img class="quote-img" src="img/arnold-pravinata.jpg" style="border: 1px solid purple;">
+						</div>
+
+							<!-- <div class="col-12 col-md-6">
+								<div class="quote-icon">
+									<i class="fa fa-2x fa-quote-right" aria-hidden="true"></i>
+								</div>
+							</div> -->
+</div>
+
+
+
+				</div>
+			</div>
+		</div> <!-- quote section /row -->
+	</div>
+
     </div> <!--/main-content -->
 </body>
 </html>

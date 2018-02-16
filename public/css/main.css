@@ -6061,13 +6061,48 @@ a.text-dark:hover, a.text-dark:focus {
 .highlight {
   background-color: #FCD800; }
 
-.right-container .card {
-  background-color: #dee2e6; }
+.banner {
+  background: url("https://solutions.transunion.com/TLOxpsignup/img/P-signup-hero-D-121217.jpg") no-repeat center center;
+  background-size: cover;
+  height: 460px; }
+  .banner .jumbotron-text {
+    color: #fff;
+    text-shadow: 2px 0px 20px rgba(0, 0, 0, 0.38); }
+  .banner h2 {
+    font-style: italic; }
+
+.right-container .signup-form {
+  background-color: #e2e4e6; }
 
 .right-container .card-header {
   text-align: center;
   border: 0;
-  background-color: #dee2e6; }
+  background-color: #e2e4e6; }
 
-.quote-section {
-  margin-top: 2rem; }
+.right-container .form-control:focus {
+  border-color: #00a6ca; }
+
+.right-container .btn {
+  width: 50%; }
+
+.video-cta {
+  border: none; }
+  .video-cta .card-body {
+    background-color: #FCD800; }
+
+.testimonials {
+  background-color: #f8f9fa; }
+  .testimonials .quote-box {
+    background-color: #fff; }
+    .testimonials .quote-box h4 {
+      color: #00a6ca;
+      text-align: center; }
+    .testimonials .quote-box .card {
+      border: none; }
+    .testimonials .quote-box .quote-text {
+      font-style: italic; }
+    .testimonials .quote-box .quote-icon {
+      color: #FCD800;
+      text-align: center !important; }
+    .testimonials .quote-box .quote-img {
+      max-width: 100%; }
