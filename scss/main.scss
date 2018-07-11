@@ -4,6 +4,12 @@
 @import "node_modules/bootstrap/scss/_variables";
 
 // Globals
+
+html {
+  font-family: $regular;
+}
+
+
 .highlight {
   background-color: $secondary;
 }
